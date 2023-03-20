@@ -1,0 +1,36 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-json
+    -   id: check-added-large-files
+    -   id: check-symlinks
+    -   id: check-executables-have-shebangs
+    -   id: check-merge-conflict
+    -   id: destroyed-symlinks
+# Uncomment if check-json not enough (i.e. comments wanted)
+-   repo: https://gitlab.com/bmares/check-json5
+    rev: v1.0.0
+    hooks:
+    -   id: check-json5
+-   repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+    -   id: detect-secrets
+-   repo: https://github.com/sirwart/ripsecrets
+    rev: v0.1.5
+    hooks:
+    -   id: ripsecrets
+#-   repo: https://github.com/pre-commit/mirrors-eslint
+#    rev: v8.36.0
+#    hooks:
+#    -   id: eslint
+#        additional_dependencies: ['eslint-config-standard@latest', 'eslint@^8.0.1', 'eslint-plugin-import@^2.25.2', 'eslint-plugin-n@^15.0.0', 'eslint-plugin-promise@^6.0.0']
+#-   repo: https://github.com/standard/standard
+#    rev: v17.0.0
+#    hooks:
+#    -   id: standard
+#        exclude: test_admin.js

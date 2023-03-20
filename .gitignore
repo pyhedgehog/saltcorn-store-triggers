@@ -1,0 +1,8 @@
+output/
+.cache/
+.debug/
+*qq*
+investigate/
+*.tmp
+node_modules/
+.env

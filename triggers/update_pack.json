@@ -1,0 +1,13 @@
+{
+  "name": "update_pack",
+  "description": "Selectively insert/update row to packs table",
+  "action": "run_js_code",
+  "when_trigger": "API call",
+  "channel": null,
+  "min_role": 1,
+  "configuration": {
+    "_": null,
+    "code": null,
+    "run_where": "Server"
+  }
+}
